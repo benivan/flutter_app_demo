@@ -82,6 +82,51 @@ class MyApp extends StatelessWidget{
               ),
             ),
             SizedBox(height: 30.0,),
+            Row(
+              children: [
+                Icon(
+                  Icons.email,
+                  color: Colors.redAccent,
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                    "itsmevikash09@live.com",
+                  style: TextStyle(
+                    color: Colors.white60,
+                    letterSpacing: 1.0,
+                    fontSize: 15.0,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 20,),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Container(
+                  alignment: Alignment.center,
+                    width: 100,
+                    height: 200,
+                    decoration:BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      image: DecorationImage(
+
+                        image:AssetImage('assets/image/vikash.jpg'),
+                      ),
+                    ) ,
+                  ),
+                ),
+                SizedBox(width: 100,),
+                Icon(
+                  Icons.person,
+                  size: 120,
+                  color: Colors.amberAccent,
+                )
+              ],
+            ),
 
           ],
           )
